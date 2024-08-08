@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visbility and z index</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            position: relative;
+            top: 15px;
+            left: 5px;
+            z-index: 30;
+            /* z-index: ; it works only for the elements with position relative, fixed , absolute and sticky 
+            it doesnot work for the default static position  */
+            /* display: none;
+             it hides the object and space taken by it */
+            background-color: blue;
+        }
+
+        #box2 {
+            position: relative;
+            top: -85px;
+            left: 64px;
+            z-index: 35;
+            /* the element with the higher z-index: will be the upper layer and in this case 
+            35 is > 30 so box2 will be up */
+            /* visibility: hidden;
+             it only hides the object but the space is still there*/
+            background-color: red;
+        }
+
+        #box3 {
+            background-color: green;
+        }
+
+        #box4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

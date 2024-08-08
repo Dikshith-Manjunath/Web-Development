@@ -1,0 +1,32 @@
+<!-- JavaScript Object Notation - JSON INTRODUCTION -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JSON</title>
+ </head>
+ <body>
+    <div class="container">
+        This is a container and Here I am Not really doing anything but I am learning how to stringify objects to be sent by JSON and I am also learning backend.... Soon I will learn MongoDB and Node.js and Express.js and finally I shall learn React.js and start my actual Web development practice working on my skills since it is very important but then also college (Not really I don't really care that much) but then still the skills are very important to get a high placement job and then start my own shit and show everybody that I am capable and I've already taken a really big L but from now onwards I ain't gonna take no L's in my fucking miserable life... things need to go smoothly from here on. There ain't no excuses U motherfucker... U just gonna do it. There's nobody to compete with your ass but yourself... the motivation for u to go is not to repeat the L's u have taken till now... I FUCKING hate L's and theres no way I'm letting myself have any more L's in my fucking life... MOTIVATION MOTIVATION MOTIVATION!!!!!
+    </div>  
+ </body>
+ <script>
+    let JSONobj = {  //This is an Object that contains data  or (object parameters) that can be converted into strings using JSON.stringify and can be transported if necessary
+        name:"Dikshith",
+        place: "Bangalore",
+        friend:"K Reddy Sai Ananya",
+        favFood : "Biryani"
+    }
+    console.log(JSONobj)   
+    let JSONString = JSON.stringify(JSONobj);  //Changed to string
+    console.log(JSONString);
+
+    JSONString = JSONString.replace('Dikshith','Chitang'); //String Functions
+    console.log(JSONString);
+
+    // parse is a function that changes the JSON string to normal data 
+    let newJSON = JSON.parse(JSONString);
+    console.log(newJSON);
+ </script>
+ </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objects Using JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        This is a Math objects tutorial 
+    </div>
+</body>
+<script>
+    let m = Math;
+    console.log(m);
+    console.log("The value of Math.E is: ", Math.E);
+    console.log("The value of Math.LN2 is: ", Math.LN2);
+    console.log("The value of Math.LN10 is: ", Math.LN10);
+    console.log("The value of Math.LOG2E is: ", Math.LOG2E);
+    console.log("The value of Math.PI is: ", Math.PI);
+    console.log("The value of Math.SQRT1_2 is: ", Math.SQRT1_2);
+    console.log("The value of Math.SQRT2 is: ", Math.SQRT2);
+    console.log("The value of Math.LOG10E is: ", Math.LOG10E);2
+
+    // These are the Math Functions
+    // E:2.718281828459045
+    // LN: 0.6931471805599453
+    // LN10: 2.302585092994046
+    // LOG2E: 1.4426950408889634
+    // LOG10E: 0.4342944819032518
+    // PI: 3.141592653589793
+    // SQRT1_2: 0.7071067811865476
+    // SQRT2: 1.4142135623730951
+
+    // the decimal numbers can be rounded off to the closet digit using another function called Math.round()
+    // round off can be done for the nearest higher and lower integers using ceil and floor for both respectively
+    
+    let a = 354.475 , b = 63.69;
+    console.log("The rounded values of a and b are: ", Math.round(a),Math.round(b));
+    console.log("The rounded values of a and b are: ", Math.ceil(a),Math.ceil(b));
+    console.log("The rounded values of a and b are: ", Math.floor(a),Math.floor(b));
+
+    // These are for the power and  square roots of the numbers 
+    console.log("The power of 3 to 5 is:",Math.pow(3,5));
+    console.log("The square root of 169 is:",Math.sqrt(169));
+    
+    // absolute value of a certain integer gives the positive absolute value or basically modulus
+    console.log("The Absolute value of 69.69 is:",Math.abs(69.69));
+    console.log("The Absolute value of -69.69 is:",Math.abs(-69.69)); //It changes the negative value to a positive value
+    
+    // trigonometric values also can be used and displayed using Math Functions 
+    
+    console.log("The value of sin(PI) is: ", Math.sin(Math.PI));
+    console.log("The value of cos(PI) is: ", Math.cos(Math.PI));
+    console.log("The value of tan(PI) is: ", Math.tan(Math.PI));
+    console.log("The value of sec(PI) is: ", Math.cos(1/Math.PI));
+    console.log("The value of cosec(PI) is: ", Math.sin(1/Math.PI));
+    console.log("The value of cot(PI) is: ", Math.tan(1/Math.PI));
+    
+    // Now let's see Min and Max values 
+    console.log("The least value out of 5,7,9 is:" , Math.min(5,7,9));
+    console.log("The largest value out of 5,7,9 is:" , Math.max(5,7,9));
+
+    // Now let's see how to generate a random number  using JavaScript 
+    let r = Math.random();
+    console.log("The random number between 0 and 1 is: ", r);
+
+    // To generate random numbers b/w any 2 digits , we need to us a formula ie
+
+    let a1 = 1;
+    let b1 = 1000;
+    let r500_550 = a1 + (b1-a1)*Math.random();
+     
+    console.log("The random number between 500 and 550 is: ", Math.ceil(r500_550));
+</script>
+</html>

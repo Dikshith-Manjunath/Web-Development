@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    .container{
+        border: 2px;
+
+    }
+    /*CSS position can be static(default) , absolute , relative , fixed ,sticky */
+        .box{
+         display: inline-block;   
+         border: 2px solid red;
+         width: 150px;
+         height: 150px;
+         margin: 2px;
+
+
+        }
+        #box3{
+            /* relative: the object is moved relative to its initial position and it leaves a gap at the initial position*/
+            
+            /* absolute: the object is moved relative to the position of the partent class */
+
+            /* position : fixed is where the object is pinned to the screen no matter where we scroll... example some text box where the text is meant to be at the top right coner of the screen  */
+
+            /* sticky: is where the object moves with the scroll and apparanl */
+            
+            position :relative ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="box1" class="box">1</div>
+    <div id="box2" class="box">2</div>
+    <div id="box3" class="box">3</div>
+    <div id="box4" class="box">4</div>
+</div>
+</body>
+</html>

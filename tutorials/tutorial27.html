@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            display: flex;
+            height: 350px;
+            width: 100%;
+            border: 2px solid black;
+            flex-direction: row;
+            justify-content: space-around;  
+            flex-wrap: wrap;
+            justify-content: center;
+                /* flex display initialization
+                flex-direction: row; is the default property and it can be changed by using different flex-directions
+                flex properties for flex box
+                flex-direction: column;
+                flex-direction: row-reverse;               the property overrides the same if used again 
+                flex-direction: column-reverse;
+                It is no wrap by default and needs to be changed to wrap to have a responsive website
+                 this is a problem I always face while making my content that is making things center aligned
+                justify-content: space-between; 
+                these are the most important settings for me with ocd
+                justify-content: space-evenly; 
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 150px;
+                all these 3 can be written in a single line like 
+                flex: 1 1 150px; */
+            
+        } 
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="container">
+    <div class="item" id="item1">First Box</div>
+    <div class="item" id="item2">Second Box</div>
+    <div class="item" id="item3">Third Box</div>
+    <div class="item" id="item4">Fourth Box</div>
+    <div class="item" id="item5">Fifth Box</div>
+    <div class="item" id="item6">Sixth Box</div>
+</div>
+</body>
+</html>

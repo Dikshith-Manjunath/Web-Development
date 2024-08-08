@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions using JavaScript</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        This is a Tutorial on arrow Functions
+    </div>
+</body>
+<script>
+    // function greet(){}  This is a regular Function 
+        
+    // arrow function is a shortcut for regular Functions 
+    // Now Let's try a sum Function using Arrow Function
+    // let greet = () => {  This is an arrow Function and it does the same Function as a regular Function
+    //     console.log('Good Morning')
+    // }
+    // greet();
+    
+
+    let greet = () => console.log("Good Morning Brother");
+    let sum = (a,b) => a+b;
+    let half = a => a/2;   //For a single argument , it is not necessary to have brackets either 
+    //But for the functions with multiple arguments , it is mandatory to add the brackets
+    
+
+    let object ={
+        names: ["Harris","Madhan","Madhavi","Ravi","Timothee"],
+        speak(){
+            this.names.forEach(student => {   //The this here is called a lexical this or a parent this and if a Function is defined inside the speak Function, it will show undefined
+                console.log("What's Up? @" + student);
+            });
+        }
+    }
+    object.speak();
+setTimeout(() => {
+    console.log("We are inside setTimeout Function");
+}, 5000);
+
+</script>
+</html>

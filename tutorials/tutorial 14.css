@@ -1,0 +1,16 @@
+/* id selector */
+#firstpara
+{
+color: red;
+}
+/* class selector */
+.bgblue
+{
+    color: blue;
+    background-color: grey;
+}
+/* grouping selector */
+footer , span
+{
+color: bisque; background-color: aqua;
+}

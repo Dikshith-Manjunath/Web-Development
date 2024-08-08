@@ -1,0 +1,1 @@
+console.log('This is tutorial 69.js and I am working on it')

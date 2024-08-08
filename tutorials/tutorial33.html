@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables and custom properties</title>
+    <style>
+        :root {
+            --box-color: tomato;
+            --new-color: rgb(40, 12, 133);
+            --old-color: rgb(170, 30, 102);
+            /* In the same way , width and height can also be defined and used (--maxw) (--minw) (--maxh) (--minh) */
+
+        }
+        .box{
+            color: black;
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            margin: 2px 9px;
+        }
+        #box-1{
+            background-color: var(--box-color);
+            box-shadow: var(--box-color);
+        }
+        #box-2{
+            background-color: var(--new-color);
+            box-shadow: var(--new-color);
+        }
+        #box-3{
+            background-color: var(--old-color);
+            box-shadow: var(--old-color);
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+        <div class="box" id="box-3"></div>
+    </div>
+</body>
+</html>

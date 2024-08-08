@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and animations</title>
+    <style>
+        
+        .container{
+            background-color: green;
+            display: flex;
+            height: 15px;
+            width: 500px;
+        }
+        .container2{
+            margin: 23px 20px;
+            background-color: green;
+            display: flex;
+        }
+        .box{
+            position: relative;
+            border: 2px solid black;
+            background-color: greenyellow;
+            animation-name: animation-1;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: alternate ;
+            animation-timing-function: ease-in-out;
+            animation-delay: 2s;
+        }
+        .box2{
+            height: 250px;
+            width: 250px;
+            position: relative;
+            border: 2px solid black;
+            background-color: greenyellow;
+            animation-name: animation-2;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+            animation-fill-mode: alternate ;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-direction: reverse;
+        }
+        /* animation: animation name , animation duration , animation iteration count , animation fill mode , animation timing function , animation delay ,animation direction */
+        @keyframes animation-1{
+            from{
+                width: 0%;
+            }
+            to{
+                width: 100%;
+            }
+        }
+        @keyframes animation-2{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <h1>This is my first animation and keyframe code</h1>
+    <p>I have made a loading bar and it is functional</p>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    <div class="container2">
+        <div class="box2"></div>
+        </div>
+</body>
+</html>

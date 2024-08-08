@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        #h2{
+            align-items: center;
+        }
+       </style>
+    </style>
+</head>
+<body>
+    <h2 class="h2">THIS IS HTML FORMS TUTORIAL</h2>
+   
+    <form action="backend.php">
+        <!-- this is to give name  -->
+    <div class="name"> 
+        <label for="displays">Name: </label> <input type="text" name="myname" id="name">
+    </div>
+    <!-- this  is to give the role -->
+    <div class="displays">
+        <label for="role">Role: </label> <input type="text" name="myrole" id="role">
+    </div>
+    <!-- this is to give the date -->
+    <div>
+        <label for="date">Date: </label> <input type="date" name="mydate" id="date">
+    </div class="displays">
+    <!-- this is to give the bunus amount -->
+    <div>
+        <label for="bonus">Bonus: </label> <input type="number" name="mybonus" id="bonus">
+    </div class="displays">
+    <!-- this is to give your email -->
+    <div>
+        <label for="email">Email: </label> <input type="email" name="myemail" id="email">
+    </div >
+    <!-- this is  to check your eligibility -->
+    <div>
+        <label for="eligibility">Eligibility: </label> <input type="checkbox" name="myeligibility" checked id="eligibility">
+    </div>
+    <!-- this is t ogive your gender -->
+    <div>
+        gender: <label for="male">Male </label> <input type="radio" name="mygender" id="male">
+         <label for="female">Female </label> <input type="radio" name="mygender" id="female">
+        <label for="other">Other: </label> <input type="radio" name="mygender" id="other">  
+         </div>
+        <!-- this is to write a text about yourself -->
+        <div>
+            <label for="write about yourself">Write About Yourself </label>
+            <div> 
+                <textarea name="mytext" id="write about yourself"></textarea>
+            </div>
+        </div>
+        <!-- this is to select the flight service -->
+        <label for="flight">Flight</label>
+        <select name="car" id="flight">
+            <option value="bri">british airways</option>
+            <option value="qua">quatar airways</option>
+            <option value="ind">indigo airlines</option>
+            <option value="emi" selected>Emirates airlines</option>
+        </select>
+    </form>
+    <!-- this is to submit or reset your information -->
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="reset now">
+        </div>
+</body>
+</html>
