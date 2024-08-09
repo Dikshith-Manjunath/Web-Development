@@ -1,9 +1,8 @@
 const express = require("express");
+const path = require("path");
 const fs = require("fs");
-
 const app = express();
 const port = 80;
-const path = require("path");
 
 //Express Specific codes
 app.use('/static', express.static('static')); // For serving static files
