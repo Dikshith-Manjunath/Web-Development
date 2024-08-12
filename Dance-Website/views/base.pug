@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title New Dance Academy
+    block scripts
+    block style
+  body
+    nav#navbar
+        ul
+            div#logo
+               img(src="../static/images.jpeg")
+               | #[a(href="/") DDA]
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact us]
+    block content
+    footer#footer 
+        | Copyright © 2024 DikshithBullshittingAcademy.com | All rights reserved

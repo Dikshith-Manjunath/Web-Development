@@ -1,0 +1,31 @@
+extends base.pug
+
+block scripts
+    script(src= '../static/index.js')
+block style
+    style 
+        include ../static/style.css
+block content
+    section#introSection 
+        div Welcome to the WebSite 
+        div.small Eat Sleep Dance Repeat!!
+    section#sponsorsSection
+        | This is a Bullshit WebSite!!
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 This is the best Dance academy
+                div.card-box
+                    div.card-img
+                        img(src="../static/1.jpg")
+                    div.card-content
+        div.card
+            h3 This is the choreography
+                div.card-box
+                    div.card-img
+                        img(src="../static/2.jpg")
+        div.card
+            h3 This is our dance studio
+                div.card-box
+                    div.card-img
+                        img(src="../static/3.jpg")

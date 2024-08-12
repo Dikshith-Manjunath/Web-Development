@@ -26,6 +26,7 @@
   background-color: cadetblue;
 }
 #navbar li {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   list-style: none;
   padding: 13px 45px;
 }
@@ -105,4 +106,14 @@
     border: 2px solid grey;
     border-radius: 5px;
     height: inherit;
+}
+#footer{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  background-color: black;
+  height: 65px;
 }
