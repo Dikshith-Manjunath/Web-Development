@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 const app = express();
 const mongoose = require("mongoose");
-const bodyparser =require("body-parser")
+const bodyparser = require("body-parser")
 mongoose.connect('mongodb://localhost/ContactDance', { useNewUrlParser: true, useUnifiedTopology: true });
 const port = 80;
 
@@ -41,7 +41,7 @@ app.post('/contact', (req,res)=>{
     }).catch(()=>{
         res.status(400).send("Item was not sent to the DB")
     })
-})
+});
 
 // START THE SERVER
 app.listen(port,()=>{
