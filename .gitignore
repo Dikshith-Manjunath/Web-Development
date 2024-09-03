@@ -1,1 +1,2 @@
 This is a git ignore file and It doesn't have any particular use but then it is necessary for the maintainance of info about the tutorials and stuff
+node_modules/
