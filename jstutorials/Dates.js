@@ -16,10 +16,10 @@ let yr = newdate.getFullYear();
 console.log("This year is: ", yr);
 
 let mn = newdate.getMonth();
-console.log("The month is :",mn);
+console.log("The month is : ",mn);
 
  let dat = newdate.getDate();
- console.log("The date is :",dat);
+ console.log("The date is : ",dat);
  
 
 

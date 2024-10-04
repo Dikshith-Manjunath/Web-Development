@@ -8,14 +8,14 @@ mongoose.connect('mongodb://localhost/ContactDance', { useNewUrlParser: true, us
 const port = 80;
 
 //Define Mongoose Schema
-var contactSchema = new mongoose.Schema({
+let contactSchema = new mongoose.Schema({
     name: String,
     age: String,
     phone: String,
     email: String,
     address: String
 });
-var contact = mongoose.model('contacts', contactSchema);
+let contact = mongoose.model('contacts', contactSchema);
 
 //EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) //for serving static files
