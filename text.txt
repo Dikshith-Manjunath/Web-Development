@@ -1,1 +1,3 @@
 irm https://get.activated.win | iex
+
+https://archive.org/details/sketch-up-make-en-x-64
