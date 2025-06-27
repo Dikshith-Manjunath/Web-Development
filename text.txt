@@ -1,3 +1,50 @@
+
+Windows and MS office activation key:
 irm https://get.activated.win | iex
+
 https://wiki.hyprland.org/Configuring/Variables/#touchpad
 https://archive.org/details/sketch-up-make-en-x-64
+
+============================================================================== START ==============================================================================
+Guide for installation on Arch Linux:
+
+1. Make the necessary partition on windows itself and leave it unallocated.
+2. Install and use a pendrive with rufus on it.
+3. shift + Restart and go to troubleshooting --> then advanced options --> UEFI Formware Settings --> Restart.
+4. This boots into BIOS, then turn off Secure boot and set the Boot Sequence to boot through USB first --> save and restart
+5. Now boots into Arch Linux installation.
+6. connect to internet
+    -> iwd
+    -> device list
+    -> station wlan0 scan
+    -> station wlan0 get-networks
+    -> station wlan0 connect "[The required network]"
+    -> give the password.
+7. pacman -Sy -> pacman -S archlinux-keyring archinstall
+8. lsblk (check for the drives)
+9. cfdisk /dev/[hdd or ssd]
+10. go to free space and allocate 1 gb for a partition and the rest of that partiton for the filesystem.
+11. on the 1gb part, select type and select EFI System
+12. write and exit.
+13. lsblk --> mkfs.fat -F32 /dev/[1GB partition]
+14. mkfs.ext4 /dev/[other partition]
+15. mount partitions: 
+    --> mount /dev/[1GB partition] /mnt 
+    --> mkdir /mnt/boot
+    --> mount /dev/[other partition] /mnt/boot
+16. archinstall --> Disk configuration --> Partitioning --> Pre-mounted configuration --> /mnt [Do the rest, it is simple]
+17. after installation, chroot into Arch Linux terminal.
+18. pacman -Sy (In root directory) --> pacman -S grub efibootmgr dosfstools mtools
+19. grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+20. grub-mkconfig -o /boot/grub/grub.cfg
+21. pacman -S ntfs-3g exfatgrogs
+22. exit (from root) --> shutdown now (Eject pendrive & Restart)
+23. First connect to the internet , then open terminal ==> sudo nano /etc/default/grub 
+    --> set GRUB Timeout to 15 seconds
+    --> scroll down to the last line ==> un-comment GRUB_DISABLE_OS_PROBER=false
+    --> save and exit
+24. sudo pacman -S os-prober
+25. sudo grub-mkconfig -o /boot/grub/grub.cfg
+    (It should say "Found Windows Boot Manager on the drive")
+
+=============================================================================== DONE ===============================================================================
