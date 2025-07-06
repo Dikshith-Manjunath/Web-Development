@@ -5,6 +5,8 @@ irm https://get.activated.win | iex
 https://wiki.hyprland.org/Configuring/Variables/#touchpad
 https://archive.org/details/sketch-up-make-en-x-64
 
+AutoCAD
+https://w16.monkrus.ws/2025/04/autodesk-autocad-202601-rus-eng.html?m=1
 ============================================================================== START ==============================================================================
 Guide for installation on Arch Linux:
 
